@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="assets/js/motor.js"></script>
+        <link href="assets/css/style.css" rel="stylesheet">
+    </head>
+
+    <body>
+            <div class="dropdown menu">
+                    <button class="dropbtn">Bestelling</button>
+                    <div class="dropdown-content">
+                            <button onclick="deleteOrder()">Verwijder</button>
+                            <p id="ORDER_LIST"></p>
+                            <p id="TOTAL_PRIZE"></p>
+                    </div>
+                  </div>
+
+                  <div class="dropdown menu">
+                        <button class="dropbtn">Fris</button>
+
+                        <button onclick="addDrink('fris')">Cola</button>
+                        <button onclick="addDrink('fris')">7up</button>
+                        <button onclick="addDrink('fris')">Cassis</button>
+                        </div>
+                      </div>
+                      <div class="dropdown menu">
+                            <button class="dropbtn">Bier</button>
+                            <div class="dropdown-content">
+                                    <button onclick="addDrink('bier')">Hertog jan</button>
+                                    <button onclick="addDrink('bier')">Heineken</button>
+                                    <button onclick="addDrink('sBier')">SpeciaalBier</button>
+                            </div>
+                          </div>
+                          <div class="dropdown menu">
+                                <button class="dropbtn">Wijn</button>
+                                <div class="dropdown-content">
+                                        <button onclick="deleteOrder()">Verwijder</button>
+                                        <p id="ORDER_LIST"></p>
+                                        <p id="TOTAL_PRIZE"></p>
+                                </div>
+                              </div>
+                  
+        <button onclick="addDrink('fris')">Fris</button>
+        <button onclick="addDrink('bier')">Bier</button>
+        <button onclick="addDrink('wijn')">Wijn</button>
+        
+    </body>
+</html>
