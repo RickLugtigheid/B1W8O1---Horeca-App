@@ -6,43 +6,40 @@
     </head>
 
     <body>
-            <div class="dropdown menu">
-                    <button class="dropbtn">Bestelling</button>
-                    <div class="dropdown-content">
-                            <button onclick="deleteOrder()">Verwijder</button>
-                            <p id="ORDER_LIST"></p>
-                            <p id="TOTAL_PRIZE"></p>
-                    </div>
-                  </div>
+            <div class="grid-container"> 
 
-                  <div class="dropdown menu">
-                        <button class="dropbtn">Fris</button>
-
-                        <button onclick="addDrink('fris')">Cola</button>
-                        <button onclick="addDrink('fris')">7up</button>
-                        <button onclick="addDrink('fris')">Cassis</button>
+                <div class="dropdown menu">
+                <button class="dropbtn"></button>
+                <div class="dropdown-content">
+                        <button onclick="payOrder()">Betaal</button>
+                        <p id="ORDER_LIST"></p>
+                        <p id="TOTAL_PRIZE"></p>
                         </div>
-                      </div>
-                      <div class="dropdown menu">
-                            <button class="dropbtn">Bier</button>
-                            <div class="dropdown-content">
-                                    <button onclick="addDrink('bier')">Hertog jan</button>
-                                    <button onclick="addDrink('bier')">Heineken</button>
-                                    <button onclick="addDrink('sBier')">SpeciaalBier</button>
-                            </div>
-                          </div>
-                          <div class="dropdown menu">
-                                <button class="dropbtn">Wijn</button>
-                                <div class="dropdown-content">
-                                        <button onclick="deleteOrder()">Verwijder</button>
-                                        <p id="ORDER_LIST"></p>
-                                        <p id="TOTAL_PRIZE"></p>
-                                </div>
-                              </div>
-                  
-        <button onclick="addDrink('fris')">Fris</button>
-        <button onclick="addDrink('bier')">Bier</button>
-        <button onclick="addDrink('wijn')">Wijn</button>
+                </div>      
+                <h1 class="itemM">Menu</h1>
+                        <div class="item1 item">
+                                <img src="assets/images/cola.jpg">
+                                <button onclick="addDrink('cola', 2.00)">Cola</button>
+                                </div> 
+
+                        <div class="item2 item">
+                                <img src="assets/images/bier.jpg">
+                                <button onclick="addDrink('bier', 2.50)">Bier</button>
+                                </div> 
+
+                        <div class="item3 item">
+                                <img src="assets/images/wijn.jpg">
+                                <button onclick="addDrink('wijn', 3.00)">Wijn</button>
+                                </div> 
+                        <div class="item4 item">
+                                <img src="assets/images/bitterBallen.jpg">
+                                <button onclick="addPortion('portie 8X', 4., 8)">8X</button>
+                                </div> 
+                        <div class="item5 item">
+                                <img src="assets/images/bitterBallen.jpg">
+                                <button onclick="addPortion('portie 16X', 8.00, 16)">16X</button>
+                                </div> 
+            </div>
         
     </body>
 </html>
