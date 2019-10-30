@@ -52,8 +52,8 @@ function payOrder(){
         if(pay != NaN && pay >= totalPrize){
             alert("De klant krijgt nog " + formatter.format(totalPrize - pay) + " terug")
             alert("De bestelling is betaald!");
-            document.getElementById("ORDER_LIST").innerHTML = "";
             totalPrize = 0;
+            orderList = [""];
             updateOrder();
         }else if(pay <= totalPrize){
             alert("ERROR: " + pay + "is lager dan de totale prijs. Totaale prijs: " + formatter.format(totalPrize));
